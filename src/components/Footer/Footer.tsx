@@ -1,6 +1,8 @@
+import styles from './styles.module.css'
+
 export const Footer = () => {
 return (
-    <div style={{ display: 'flex', gap: '20px', padding: '20px', justifyContent: 'center', height: '15vh' }}>
+    <div className={styles.footerStyles}>
       <a href="https://github.com/Subham0207" target="_blank">
         <img src="https://cdn.simpleicons.org/github/white" width="30" alt="GitHub" />
       </a>

@@ -1,0 +1,9 @@
+.footerStyles{
+    display: 'flex';
+    gap: 1rem; 
+    justify-content: 'center'; 
+    height: '15vh';
+    padding-top: 1rem;
+    margin-top: 1rem;
+    border-top: 0.3rem solid white;
+}

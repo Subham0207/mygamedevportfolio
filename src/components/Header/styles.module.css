@@ -3,4 +3,7 @@
     width: 100%;
     gap: 2rem;
     height: 10vh;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    border-bottom: 0.3rem solid white;
 }
