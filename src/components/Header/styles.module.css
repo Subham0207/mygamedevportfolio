@@ -1,0 +1,6 @@
+.headerStyles{
+    display: flex;
+    width: 100%;
+    gap: 2rem;
+    height: 10vh;
+}
