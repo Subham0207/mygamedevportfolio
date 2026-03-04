@@ -1,6 +1,8 @@
+import { CaseStudy } from "../components/CaseStudy/CasteStudy"
 import { Footer } from "../components/Footer/Footer"
 import { Header } from "../components/Header/Header"
 import { Section } from "../components/Section/Section"
+import { TechHighLight } from "../components/TechHighlight/TechHighLight"
 
 interface Section{
     title: string,
@@ -8,7 +10,7 @@ interface Section{
 }
 
 export const Portfolio = () =>{
-    const summary = "Currently working on my game-engine as a side project build using open and C++. Below are some important milestones I have achived thus far."
+    const summary = "Currently working on my game-engine as a side project build using openGL and C++. Below are some important milestones I have achived thus far."
     const sections: Section[] = [
         {
             title: "The Rendering Pipeline (PBR & IBL)",
@@ -60,6 +62,8 @@ return (
             ))
         }
         </div>
+        <CaseStudy/>
+        <TechHighLight/>
         <Footer></Footer>
     </>
 )
