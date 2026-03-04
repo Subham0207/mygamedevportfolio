@@ -10,7 +10,7 @@ interface Section{
 }
 
 export const Portfolio = () =>{
-    const summary = "Currently working on my game-engine as a side project build using openGL and C++. Below are some important milestones I have achived thus far."
+    const summary = <p>Currently working on my Custom C++ 3D Game Engine & SDK built using openGL and C++. Below are some important milestones I have achived thus far. See here for my <a href="https://github.com/Subham0207/game-engine"><i>Game Engine Repo</i></a></p>
     const sections: Section[] = [
         {
             title: "The Rendering Pipeline (PBR & IBL)",
@@ -39,6 +39,10 @@ export const Portfolio = () =>{
         {
             title: "Engine UI using Imgui",
             content: ""
+        },
+        {
+            title: "Project Manager",
+            content: "Developed a C++ Project Manager that automates boilerplate generation and dependency linking, enabling a modular workflow where the Engine exists as a standalone shared library."
         },
         {
             title: "Roadmap",
