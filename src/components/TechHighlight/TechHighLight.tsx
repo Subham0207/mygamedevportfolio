@@ -24,7 +24,7 @@ export const TechHighLight = () => {
                         Graphics Debugging:
                     </b>
                     <div>
-                        Integrated RenderDoc into the development workflow to validate vertex buffer layouts and debug the PBR lighting equation’s specular reflections at the fragment level.
+                        Integrated RenderDoc and Tracy Profiler into the development workflow to validate vertex buffer layouts and debug the PBR lighting equation’s specular reflections at the fragment level.
                     </div>
                 </li>
             </ul>

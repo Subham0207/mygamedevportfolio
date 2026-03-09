@@ -1,4 +1,5 @@
-import { CaseStudy } from "../components/CaseStudy/CasteStudy"
+import { CaseStudy } from "../components/CaseStudy/CaseStudy"
+import { CaseStudy2 } from "../components/CaseStudy/CaseStudy2"
 import { Footer } from "../components/Footer/Footer"
 import { Header } from "../components/Header/Header"
 import { Section } from "../components/Section/Section"
@@ -14,15 +15,11 @@ export const Portfolio = () =>{
     const sections: Section[] = [
         {
             title: "The Rendering Pipeline (PBR & IBL)",
-            content: "Engineered a physically-based rendering (PBR) pipeline from scratch using C++ and OpenGL. Implemented Image-Based Lighting (IBL) by pre-calculating environment maps (Irradiance/Prefilter) and a BRDF-LUT. Utilized the Cook-Torrance specular BRDF to ensure energy conservation and visual fidelity across varying material roughness."
-        },
-        {
-            title: "Point, Spot and Direction light. And Shadow maps for them",
-            content: ""
+            content: "Engineered a physically-based rendering (PBR) pipeline from scratch using C++ and OpenGL. Implemented Image-Based Lighting (IBL) by pre-calculating environment maps (Irradiance/Prefilter) and a BRDF-LUT. Utilized the Cook-Torrance specular BRDF to ensure energy conservation and visual fidelity across varying material roughness. Integrated Point, Spot and Direction light with Shadow maps for them"
         },
         {
             title: "Asset Pipeline (Assimp & Boost)",
-            content: "Developed a custom asset conditioning pipeline. Integrated Assimp for initial mesh/animation ingestion, then serialized data into a proprietary binary format using Boost.Serialization. This reduced runtime load times by [X]% by eliminating redundant parsing and aligning data for direct GPU upload."
+            content: "Developed a custom asset conditioning pipeline. Integrated Assimp for initial mesh/animation ingestion, then serialized data into a proprietary binary format using Boost.Serialization. This reduced runtime load times by eliminating redundant parsing and aligning data for direct GPU upload."
         },
         {
             title: "Architecture (Material System)",
@@ -30,15 +27,11 @@ export const Portfolio = () =>{
         },
         {
             title: "AI pathfinding using navmesh",
-            content: "I use a library to create navmesh. And then in a AI controller sample points on this navmesh based on where I want the AI controller character to go."
+            content: "I used Detour and Recast library for generating NavMesh and pathfinding. And then in a AI controller sample points on this navmesh based on where I want the AI controller character to go."
         },
         {
             title: "Physics system using JoltPhysics library",
             content: "Integrated JoltPhysics to handle complex mesh-to-primitive collision detection and response."
-        },
-        {
-            title: "Engine UI using Imgui",
-            content: ""
         },
         {
             title: "Project Manager",
@@ -67,6 +60,7 @@ return (
         }
         </div>
         <CaseStudy/>
+        <CaseStudy2></CaseStudy2>
         <TechHighLight/>
         <Footer></Footer>
     </>
