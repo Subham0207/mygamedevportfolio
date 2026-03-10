@@ -5,8 +5,11 @@ export const Header = () =>{
     return (
         <div className={styles.headerStyles}>
             <img src={photo} alt="profile photo" />
-            <div>
-                Subham
+            <div style={{display: "flex", flexDirection: 'column'}}>
+                <div className={styles.myNameStyles}>
+                    Subham
+                </div>
+                <p><i>Software Developer | C++ Game Engine & Graphics Programming</i></p>
             </div>
         </div>
     )

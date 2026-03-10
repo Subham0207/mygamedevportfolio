@@ -7,3 +7,9 @@
     margin-bottom: 1rem;
     border-bottom: 0.3rem solid white;
 }
+
+.myNameStyles
+{
+    font-size: 2rem;
+    font-weight: 700;
+}
