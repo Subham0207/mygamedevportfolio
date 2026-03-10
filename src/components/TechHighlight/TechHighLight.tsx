@@ -1,6 +1,8 @@
+import styles from './styles.module.css'
+
 export const TechHighLight = () => {
     return (
-        <div>
+        <div className={styles.techHighLight}>
             <h2>Technical Highlight</h2>
             <ul>
                 <li>

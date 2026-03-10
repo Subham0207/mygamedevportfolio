@@ -12,6 +12,17 @@ interface Section{
 
 export const Portfolio = () =>{
     const summary = <p>Currently working on my Custom C++ 3D Game Engine & SDK built using openGL and C++. Below are some important milestones I have achived thus far. See here for my <a href="https://github.com/Subham0207/game-engine"><i>Game Engine Repo</i></a></p>
+    const importantLinks = <div>
+        <b>Links: </b>
+        <ul>
+            <li>
+                <div>
+                <a href="https://github.com/Subham0207/game-engine/releases/tag/v0.1.0-alpha">download Engine Releases from here. </a>
+                This contains the executable of the game used in the below demo. And a release build of the engine itself paired with a game project.
+                </div>
+            </li>
+        </ul>
+    </div>
     const sections: Section[] = [
         {
             title: "The Rendering Pipeline (PBR & IBL)",
@@ -47,6 +58,18 @@ return (
         <Header></Header>
         <div>
             {summary}
+            {importantLinks}
+        </div>
+        <h2>Engine Tech demo</h2>
+        <div className={""}>
+            <iframe 
+            width="800" 
+            height="450"
+            src="https://www.youtube.com/embed/2BAG6L_SdKo"
+            title="Glitter Engine Demo"
+            allowFullScreen
+            >
+            </iframe>
         </div>
         <div>
         {

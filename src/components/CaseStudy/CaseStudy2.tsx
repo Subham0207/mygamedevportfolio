@@ -1,13 +1,12 @@
-import tracyBefore10 from '../../assets/ReducedFrameTime/TracyBefore1.0.png'
 import tracyBefore11 from '../../assets/ReducedFrameTime/TracyBefore1.1.png'
-import tracyAfter10 from '../../assets/ReducedFrameTime/TracyAfter1.0.png'
 import tracyAfter11 from '../../assets/ReducedFrameTime/TracyAfter1.1.png'
+import styles from './styles.module.css'
 
 export const CaseStudy2 = () => {
 
     const result = "CPU animation logic dropped from ~10ms to <1ms. Total frame time stabilized at 5–6ms, ensuring a locked 60 FPS with zero VSync-induced stutter.";
     return (
-        <div>
+        <div className={styles.caseStudy2Div}>
             <h2>Case Study: Resolving Frame Spikes in the Animation Pipeline</h2>
             <div>
                 By instrumenting the engine with Tracy, I identified a massive CPU stall during the animation update phase.
@@ -30,25 +29,15 @@ export const CaseStudy2 = () => {
                     "This taught me the critical importance of Data Locality and the 'Cost of Synchronization.' Even a 0.5ms overrun can cost you 16.6ms of actual latency if your engine isn't carefully tuned for the display's refresh rate."
                 </i>
             </div>
-            <div style={{display: "flex", flexDirection: "column"}}>
+            <div style={{display: "flex", flexDirection: "column", justifyContent: "center", alignContent: "center" , backgroundColor: "grey", margin: "1rem"}}>
                 <div style={{display: "flex", flexDirection: "row"}}>
                     <div style={{margin: "1rem"}}>
                         <p>Before</p>
-                        <img src={tracyBefore10} alt="Tracy performance before 1.0" height={"300"} />
+                        <img src={tracyBefore11} alt="Tracy performance before 1.1" height={"250"} />
                     </div>
                     <div style={{margin: "1rem"}}>
                         <p>After</p>
-                        <img src={tracyAfter10} alt="Tracy performance after 1.0" height={"300"}/>
-                    </div>
-                </div>
-                <div style={{display: "flex", flexDirection: "row"}}>
-                    <div style={{margin: "1rem"}}>
-                        <p>Before</p>
-                        <img src={tracyBefore11} alt="Tracy performance before 1.1" height={"300"}/>
-                    </div>
-                    <div style={{margin: "1rem"}}>
-                        <p>After</p>
-                        <img src={tracyAfter11} alt="Tracy performance after 1.1" height={"300"}/>
+                        <img src={tracyAfter11} alt="Tracy performance after 1.1" height={"250"} />
                     </div>
                 </div>
             </div>
