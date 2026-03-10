@@ -2,7 +2,7 @@ import styles from './styles.module.css'
 
 export const Footer = () => {
 return (
-    <div className={styles.footerStyles}>
+    <div className={styles.footerContentStyles}>
       <a href="https://github.com/Subham0207" target="_blank">
         <img src="https://cdn.simpleicons.org/github/white" width="30" alt="GitHub" />
       </a>

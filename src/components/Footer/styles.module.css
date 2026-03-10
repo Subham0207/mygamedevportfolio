@@ -1,8 +1,7 @@
-.footerStyles{
-    display: 'flex';
-    gap: 1rem; 
-    justify-content: 'center'; 
-    height: '15vh';
+.footerContentStyles{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
     padding-top: 1rem;
     margin-top: 1rem;
     border-top: 0.3rem solid white;
