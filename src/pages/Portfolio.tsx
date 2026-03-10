@@ -26,7 +26,7 @@ export const Portfolio = () =>{
     const sections: Section[] = [
         {
             title: "The Rendering Pipeline (PBR & IBL)",
-            content: "Engineered a physically-based rendering (PBR) pipeline from scratch using C++ and OpenGL. Implemented Image-Based Lighting (IBL) by pre-calculating environment maps (Irradiance/Prefilter) and a BRDF-LUT. Utilized the Cook-Torrance specular BRDF to ensure energy conservation and visual fidelity across varying material roughness. Integrated Point, Spot and Direction light with Shadow maps for them"
+            content: "Engineered a physically-based rendering (PBR) pipeline from scratch using C++ and OpenGL. Implemented Image-Based Lighting (IBL) by pre-calculating environment maps (Irradiance/Prefilter) and a BRDF-LUT. Utilized the Cook-Torrance specular BRDF to ensure energy conservation and visual fidelity across varying material roughness. Integrated Point, Spot and Direction light with PCF Shadow maps for them"
         },
         {
             title: "Asset Pipeline (Assimp & Boost)",
