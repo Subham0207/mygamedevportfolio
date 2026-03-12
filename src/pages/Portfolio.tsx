@@ -4,6 +4,7 @@ import { Footer } from "../components/Footer/Footer"
 import { Header } from "../components/Header/Header"
 import { Section } from "../components/Section/Section"
 import { TechHighLight } from "../components/TechHighlight/TechHighLight"
+import { MetaProgramming } from "../components/TechHighlight/MetaProgramming"
 
 interface Section{
     title: string,
@@ -82,6 +83,7 @@ return (
             ))
         }
         </div>
+        <MetaProgramming/>
         <CaseStudy/>
         <CaseStudy2></CaseStudy2>
         <TechHighLight/>
