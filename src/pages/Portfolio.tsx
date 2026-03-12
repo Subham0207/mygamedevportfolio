@@ -18,8 +18,20 @@ export const Portfolio = () =>{
         <ul>
             <li>
                 <div>
-                <a href="https://github.com/Subham0207/game-engine/releases/tag/v0.1.0-alpha">download Engine Releases from here. </a>
+                <a href="https://github.com/Subham0207/game-engine/releases/tag/v0.1.0-alpha">Download Engine Releases from here. </a>
                 This contains the executable of the game used in the below demo. And a release build of the engine itself paired with a game project.
+                </div>
+            </li>
+            <li>
+                <div>
+                    Source code of the game engine.
+                <a href="https://github.com/Subham0207/game-engine"> Game engine source code</a>
+                </div>
+            </li>
+            <li>
+                <div>
+                    Source code of the game project used in the below tech demo.
+                <a href="https://github.com/Subham0207/MyGameProject"> Game Project Source code</a>
                 </div>
             </li>
         </ul>
