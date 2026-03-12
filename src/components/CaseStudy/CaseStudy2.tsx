@@ -1,10 +1,17 @@
 import tracyBefore11 from '../../assets/ReducedFrameTime/TracyBefore1.1.png'
 import tracyAfter11 from '../../assets/ReducedFrameTime/TracyAfter1.1.png'
 import styles from './styles.module.css'
+import Captions from "yet-another-react-lightbox/plugins/captions";
+import Lightbox from "yet-another-react-lightbox";
+import "yet-another-react-lightbox/styles.css";
+import "yet-another-react-lightbox/plugins/captions.css";
+import { useState } from 'react';
 
 export const CaseStudy2 = () => {
-
+    const [open, setOpen] = useState(false);
     const result = "CPU animation logic dropped from ~10ms to <1ms. Total frame time stabilized at 5–6ms, ensuring a locked 60 FPS with zero VSync-induced stutter.";
+    const beforeImageDescription = "I have selected the frame where the frame time spiked to 33ms. You can see the BoneMatrixOnCPU zone takes 10ms";
+    const AfterImageDescription = "You can see we have effectively the frame time of BoneMatrixOnCPU zone is about 300us";
     return (
         <div className={styles.caseStudy2Div}>
             <h2>Case Study: Resolving Frame Spikes in the Animation Pipeline</h2>
@@ -33,14 +40,31 @@ export const CaseStudy2 = () => {
                 <div style={{display: "flex", flexDirection: "row"}}>
                     <div style={{margin: "1rem"}}>
                         <p>Before</p>
-                        <img src={tracyBefore11} alt="Tracy performance before 1.1" height={"250"} />
+                        <img src={tracyBefore11} alt="Tracy performance before 1.1" style={{height: "250px", cursor: "zoom-in"}} onClick={() => setOpen(true)} />
                     </div>
                     <div style={{margin: "1rem"}}>
                         <p>After</p>
-                        <img src={tracyAfter11} alt="Tracy performance after 1.1" height={"250"} />
+                        <img src={tracyAfter11} alt="Tracy performance after 1.1" style={{height: "250px", cursor: "zoom-in"}} onClick={() => setOpen(true)} />
                     </div>
                 </div>
             </div>
+            <Lightbox
+                open={open}
+                close={() => setOpen(false)}
+                plugins={[Captions]}
+                slides={[
+                    {
+                        src: tracyBefore11,
+                        title: "Before",
+                        description: beforeImageDescription,
+                    },
+                    {
+                        src: tracyAfter11,
+                        title: "After",
+                        description: AfterImageDescription,
+                    },
+                ]}
+            />
         </div>
     )
 }
